@@ -192,7 +192,7 @@ $root = dirname(__FILE__) . '/hash';
 
 //$filename = '63814.xml';
 
-if (1)
+if (0)
 {
 	$filename = uniqid();
 
@@ -218,6 +218,13 @@ if (1)
 	$url = 'https://www.jstage.jst.go.jp/article/hsj2000/22/2/22_2_51/_pdf';
 	$url = 'http://www.biomedcentral.com/content/pdf/1756-0500-2-241.pdf';
 	$url = 'http://faunaofindia.nic.in/PDFVolumes/records/086/03-04/0505-0513.pdf';
+	
+	$url = 'https://www.biotaxa.org/Zootaxa/article/download/zootaxa.3161.1.4/41745';
+	
+	
+	// OK
+	$url = 'https://data.environment.sa.gov.au/Content/Publications/JABG35P153_Wapstra.pdf';
+	$url = 'https://kmkjournals.com/upload/PDF/REJ/30/ent30_4_381_389_Gorokhov_for_Inet.pdf';
 
 	$result_code = get($url, $filename);
 	
@@ -265,12 +272,15 @@ if (1)
 }
 
 // just a file
-if (0)
+if (1)
 {
 
 	$hash_type = 'md5';
 	$filename = 'examples/figure-2.png';
 	//$filename = 'ZK_article_62034_en_1.pdf';
+	
+	$filename = 'emberton2009.pdf';
+	$filename = 'source.pdf';
 
 
 	if (have_file_hash($root, $hash_type, $filename))
